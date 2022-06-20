@@ -1,0 +1,141 @@
+/* 
+---------------------------------------------
+contact
+--------------------------------------------- 
+*/
+
+.contact-area {
+	position: relative;
+	border-bottom: 1px solid #E8E8FF;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+
+	.contact-item {
+		background: #fff;
+		box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+		@include radius(5px);
+		margin-bottom: 15px;
+		position: relative;
+		@include font($normal, 14px);
+		color: $textDark;
+		overflow: hidden;
+		height: 70px;
+
+		.icon {
+			width: 56px;
+			height: 56px;
+			background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+			color: $primaryColor;
+			float: left;
+			@include radius(5px);
+			margin-top: 7px;
+			margin-left: 7px;
+
+			i {
+				display: block;
+				width: 56px;
+				height: 56px;
+				line-height: 56px;
+				text-align: center;
+				color: #fff;
+			}
+		}
+
+		.txt {
+			padding-left: 80px;
+			height: 70px;
+			line-height: 70px;
+			font-size: 14px;
+
+			p {
+				margin-bottom: 0px !important;
+			}
+
+			a {
+				color: $textDark;
+			}
+		}
+	}
+
+	.map-canvas {
+		width: 100%;
+		height: 240px;
+		box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+		@include radius(5px);
+	}
+}
+
+
+.contact-bottom {
+	margin-top: 10px;
+
+	.contact-text {
+		@include font($normal, 14px);
+		color: $textDark;
+		letter-spacing: 0.6px;
+		line-height: 26px;
+
+		p {
+			margin-bottom: 26px;
+		}
+	}
+
+	.contact-form {
+		input, textarea {
+			border: 1px solid #eee;
+			width: 100%;
+			height: 50px;
+			outline: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			@include transition(.3s);
+			@include radius(4px);
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			margin-bottom: 30px;
+
+			&:focus {
+				border: 1px solid $primaryColor;
+				padding-left: 30px;
+			}
+		}
+
+		textarea {
+			height: 150px;
+			resize: none;
+			padding: 20px;
+		}
+
+		.light-btn {
+			padding-left: 30px;
+			border: none;
+			cursor: pointer;
+			outline: none;
+			margin-bottom: 30px;
+			float: right;
+		}
+	}
+}
+
+@media (max-width : 991px) {
+	.contact-area {
+		overflow: initial !important;
+		margin-bottom: 10px !important;
+
+		.contact-item {
+			.txt {
+				font-size: 12px;
+			}
+		}
+
+		.map-canvas {
+			margin-bottom: 30px;
+		}
+	}
+
+	.contact-bottom {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+}

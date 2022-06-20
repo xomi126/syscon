@@ -1,0 +1,32 @@
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&subset=latin-ext');
+
+$font : 'Montserrat', sans-serif;
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semi: 600;
+$bold: 700;
+
+
+// General Colors
+$primaryColor: #3CA790;
+$secondaryColor: #EFF7F5;
+
+// Gradient Colors
+$gradientDark: #1E8F95;
+$gradientLight: #82E182;
+
+//Heading Color
+$headingDark: #3B566E;
+$headingLight: #ffffff;
+
+// Text Colors
+$textDark: #6F8BA4;
+$textLight: #E8FFED;

@@ -1,0 +1,211 @@
+/* 
+---------------------------------------------
+features
+--------------------------------------------- 
+*/
+
+.home-fix {
+	padding-top: 0px;
+	margin-top: -100px;
+}
+
+.about-fix {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: -70px;
+	position: relative;
+	z-index: 2;
+	background: none;
+}
+
+.features-small-item {
+	display: block;
+	background: #fff;
+	box-shadow: 0 2px 48px 0 rgba(0,0,0,0.06);
+	border-radius: 5px;
+	padding: 30px 26px;
+	text-align: center;
+	@include transition(.3s);
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+		@include transition(.3s);
+		opacity: 0;
+	}
+
+	&.active, &:hover {
+		&:before {
+			opacity: 1;
+		}
+
+		.icon {
+			i {
+				background-image: linear-gradient(127deg, #fff 0%, #fff 91%);
+			}
+		}
+
+		.features-title {
+			color: $headingLight;
+		}
+
+		p {
+			color: $textLight;
+		}
+	}
+
+	&.home-top-p {
+		margin-top: 70px;
+	}
+
+	&.home-top-n {
+		margin-top: -70px;
+	}
+
+	.icon {
+		width: 60px;
+		height: 30px;
+		margin: auto;
+		position: relative;
+		margin-bottom: 20px;
+
+		i {
+			display: block;
+			position: absolute;
+			width: 100%;
+			z-index: 2;
+			font-size: 28px;
+			background-image: linear-gradient(127deg, $gradientDark 0%, $gradientLight 91%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			@include transition(.3s);
+		}
+	}
+
+	.features-title {
+		@include font($normal, 16px);
+		color: $headingDark;
+		letter-spacing: 0.7px;
+		margin-bottom: 15px;
+		line-height: 28px;
+		position: relative;
+		z-index: 2;
+		@include transition(.3s);
+	}
+
+	p {
+		@include font($normal, 14px);
+		color: $textDark;
+		letter-spacing: 0.88px;
+		line-height: 26px;
+		position: relative;
+		z-index: 2;
+		@include transition(.3s);
+		margin-bottom: 0px !important;
+	}
+
+	.dark-btn {
+		margin: auto;
+		box-shadow: none;
+		padding-left: 30px;
+		margin-top: 30px;
+	}
+}
+
+.services-post {
+	margin-bottom: 30px;
+	@include radius(8px);
+	background: #fff;
+	box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+	display: block;
+
+	&:hover {
+		.post-content {
+			.icon {
+				right: 30px;
+			}
+		}
+	}
+
+	.img {
+		overflow: hidden;
+		@include radius(8px);
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		position: relative;
+		height: 200px;
+	}
+
+	.post-content {
+		padding: 25px;
+		padding-bottom: 5px;
+		padding-top: 35px;
+		position: relative;
+
+		h3 {
+			position: relative;
+			@include font($normal, 14px);
+			color: #fff;
+			letter-spacing: 0.88px;
+			@include transition(.3s);
+			background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin: auto;
+			padding-left: 20px;
+			padding-right: 20px;
+			@include radius(5px);
+			margin-top: -50px;
+			margin-bottom: -30px;
+		}
+
+		.text {
+			@include font($normal, 14px);
+			color: $textDark;
+			letter-spacing: 0.88px;
+			line-height: 26px;
+			margin-bottom: 20px;
+			margin-top: 60px;
+			text-align: center;
+
+			&.post-detail {
+				@include font($normal, 16px);
+				line-height: 28px;
+				text-align: left;
+			}
+		}
+
+		.dark-btn {
+			margin: auto;
+			margin-bottom: 30px;
+			box-shadow: none;
+		}
+	}
+}
+
+
+@media (max-width : 991px) {
+	.home-fix {
+		padding-top: 100px;
+		margin-top: 0px;
+	}
+
+	.features-small-item {
+		&.home-top-p {
+			margin-top: 0px !important;
+		}
+
+		&.home-top-n {
+			margin-top: 0px !important;
+		}
+	}
+}
