@@ -95,7 +95,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   text-align: center;
 }
 
@@ -139,7 +139,7 @@ body {
 .left-heading .section-title {
   font-weight: 700;
   font-size: 28px;
-  color: #3b566e;
+  color: #ff9637;
   letter-spacing: 1.75px;
   line-height: 42px;
   margin-bottom: 10px;
@@ -179,9 +179,9 @@ body {
   text-align: center;
 }
 .center-heading .section-title {
-  font-weight: 710;
-  font-size: 45px;
-  color: #3b566e;
+  font-weight: 700;
+  font-size: 36px;
+  color: #007f9e;
   letter-spacing: -0.25px;
   line-height: 165px;
   margin-bottom: 20px;
@@ -217,7 +217,7 @@ body {
   color: #F0F1FF;
 }
 .left-text p {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .left-text p.dark {
   color: #3B566E;
@@ -271,7 +271,7 @@ body {
 
 .light-btn {
   display: block;
-  width: 170px;
+  width: 270px;
   height: 40px;
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
@@ -318,7 +318,7 @@ body {
   height: 32px;
   left: 4px;
   top: 4px;
-  background-image: linear-gradient(135deg, #ee9a41  0%, #ee9a41  100%);
+  background-image: linear-gradient(135deg, #00617e  0%, #00617e  100%);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -334,7 +334,7 @@ body {
 }
 .light-btn:hover:before, .light-btn.active:before {
   background: none;
-  color: #fff;
+  color: #ff9637;
 }
 .light-btn:hover:after, .light-btn.active:after {
   opacity: 1;
@@ -598,7 +598,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 14px;
-  color: #4186a3;
+  color: #00617e;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -609,7 +609,7 @@ header
   letter-spacing: 1px;
 }
 .header-area .main-nav .nav li a:hover {
-  color: #625FDB;
+  color: #ff9637;
 }
 .header-area .main-nav .nav li a.btn-nav-line {
   padding-left: 25px;
@@ -954,7 +954,7 @@ welcome
 .welcome-area {
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(135deg, #3b566e 0%, #3b566e 100%);
+  background-image: linear-gradient(135deg, #00617e 10%, #3775ac 100%);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -1044,11 +1044,11 @@ welcome
   z-index: 2;
   height: 46px;
   border: none;
-  background: #fff;
+  background: #ff9637;
   border-radius: 0 5px 5px 0;
   font-weight: 400;
   font-size: 12px;
-  color: #625FDB;
+  color: #fff;
   width: 98px;
   outline: none;
   cursor: pointer;
@@ -1223,7 +1223,7 @@ features
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
+  background-image: linear-gradient(135deg, #005977 0%, #005977 100%);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1261,7 +1261,7 @@ features
   width: 100%;
   z-index: 2;
   font-size: 28px;
-  background-image: linear-gradient(127deg, #6A30D1 0%, #5C83E3 91%);
+  background-image: linear-gradient(127deg, #003862 0%, #ff9637  91%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 0.3s ease 0s;
@@ -1270,12 +1270,12 @@ features
   transition: all 0.3s ease 0s;
 }
 .features-small-item .features-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  color: #3B566E;
-  letter-spacing: 0.7px;
-  margin-bottom: 15px;
-  line-height: 28px;
+  color: #ff9637;
+  letter-spacing: 0.3px;
+  margin-bottom: -1px;
+  line-height: 20px;
   position: relative;
   z-index: 2;
   -webkit-transition: all 0.3s ease 0s;
@@ -2198,7 +2198,7 @@ pages
   top: -14%;
   right: 0%;
   bottom: 0%;
-  background-image: linear-gradient(127deg, #3b566e 0%, #3b566e 91%);
+  background-image: linear-gradient(360deg, #00617e 91%, #00617e 9%);
   z-index: 2;
   opacity: 0.95;
 }
@@ -2212,7 +2212,7 @@ pages
 .page .cover .page-top h1 {
   font-weight: 400;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 150px;
   letter-spacing: 1.4px;
   color: #fff;
   text-align: center;
@@ -2270,7 +2270,7 @@ pages
   width: 29px;
   height: 29px;
   line-height: 29px;
-  color: #fff;
+  color: #0087a4;
   display: inline-block;
   background-image: linear-gradient(135deg, #ed9537 0%, #ed9537 100%);
   -webkit-border-radius: 5px;
@@ -2392,7 +2392,7 @@ pages
   }
   .page .cover h1 {
     font-size: 26px !important;
-    line-height: 36px !important;
+    line-height: 165px !important;
   }
   .page .cover .page-top {
     text-align: center;
@@ -2851,8 +2851,8 @@ contact
 .contact-area .contact-item .icon {
   width: 56px;
   height: 56px;
-  background-image: linear-gradient(135deg, #ed9537 0%, #ed9537  100%);
-  color: #625FDB;
+  /*background-image: linear-gradient(135deg, #ed9537 0%, #ed9537  100%);
+  color: #625FDB;*/
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2867,7 +2867,7 @@ contact
   height: 56px;
   line-height: 56px;
   text-align: center;
-  color: #fff;
+  color: #0087a4;
 }
 .contact-area .contact-item .txt {
   padding-left: 80px;
@@ -2938,6 +2938,7 @@ contact
   outline: none;
   margin-bottom: 30px;
   float: center;
+  margin-left: 230px;
 }
 
 @media (max-width: 991px) {
@@ -3022,6 +3023,7 @@ display: block;
 overflow: hidden;
 margin: 0;
 padding: 0;
+margin-left: -10px;
 }
 .slick-list:focus{
 outline: none;
@@ -3038,7 +3040,11 @@ margin-left: auto;
 margin-right: auto;
 }
 .slick-initialized .slick-slide{
-display: block;
+display: grid;
+align-items: stretch;
+justify-content: space-around;
+align-content: center;
+justify-items: stretch;
 }
 .slick-loading .slick-slide{
 visibility: hidden;
@@ -3047,9 +3053,14 @@ visibility: hidden;
   text-align: center;
 }
 .client-area{
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 0px;
 }
 .area{
   padding-top: 100px;
+}
+@media min-width(min-width: 559px){
+.slick-slide{
+  display: grid;
+}
 }

@@ -180,7 +180,7 @@
 
 $(document).ready(function(){
 $('.icon-area').slick({
-slidesToShow: 5,
+slidesToShow: 4,
 slidesToScroll: 1,
 autoplay: true,
 autoplaySpeed: 1500,
@@ -190,7 +190,7 @@ pauseOnHover: true,
 responsive: [{
 breakpoint: 768,
 settings: {
-slidesToShow: 3
+slidesToShow: 2
 }
 }, {
 breakpoint: 520,
@@ -205,4 +205,29 @@ slidesToShow: 1
 
 
 
-})
+});
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunctionn() {
+  var x = document.getElementById("myDIVV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunctionnn() {
+  var x = document.getElementById("myDIVVV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
